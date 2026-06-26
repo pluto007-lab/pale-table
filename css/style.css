@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #dfe3ef;
+    color: #5d6470;
+    font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  }
+  
+  .page {
+    width: 90%;
+    max-width: 980px;
+    margin: 50px auto;
+    background: #fffdfa;
+    box-shadow: 12px 12px 20px rgba(120, 130, 150, 0.25);
+    overflow: hidden;
+  }
+  
+  /* ヘッダー */
+  .header {
+    height: 70px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #79a7d3;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #9aa3ad;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  nav span {
+    margin-left: 20px;
+  }
+  
+  /* メインビジュアル */
+  .hero {
+    height: 470px;
+    margin: 0 30px;
+    border-radius: 0 0 70px 70px;
+    background: linear-gradient(90deg, #fffdfa 0%, #f5f0e8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .hero-text h1 {
+    color: #6f9dca;
+    font-size: 40px;
+    line-height: 1.6;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .btn,
+  .small-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: #ffffff;
+    color: #7fa8cc;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 13px;
+    box-shadow: 0 8px 18px rgba(150, 160, 180, 0.18);
+  }
+  
+  .hero-img {
+    width: 42%;
+    border-radius: 40px;
+  }
+  
+  /* About */
+  .about {
+    padding: 90px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .about h2,
+  .products h2 {
+    color: #6f9dca;
+    font-size: 34px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  
+  .about-images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 28px;
+    background: #f3f6fb;
+  }
+  
+  .about-images img:first-child {
+    grid-row: span 2;
+    height: 318px;
+  }
+  
+  /* Products */
+  .products {
+    padding: 40px 70px 100px;
+  }
+  
+  .sub-title {
+    color: #8fa9c4;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+  }
+  
+  .product-area {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 35px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f7f8fb;
+    border-radius: 28px;
+    padding: 15px;
+    color: #9aa3ad;
+    font-size: 13px;
+  }
+  
+  .product-item.active {
+    border: 2px solid #c8dff4;
+    background: #eef6ff;
+  }
+  
+  .product-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+  
+  .product-detail {
+    background: #f4f6fb;
+    border-radius: 45px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+  }
+  
+  .main-product-img {
+    background: #dcecff;
+    border-radius: 35px;
+    padding: 25px;
+  }
+  
+  .main-product-img img {
+    width: 100%;
+    border-radius: 28px;
+  }
+  
+  .product-info h3 {
+    color: #6f9dca;
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+  }
+  
+  .price {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .product-info p {
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .color-dot {
+    width: 16px;
+    height: 16px;
+    background: #79a7d3;
+    border-radius: 50%;
+  }
+  
+  /* ボタン共通 */
+  button {
+    border: none;
+    background: #ffffff;
+    color: #7fa8cc;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(150, 160, 180, 0.18);
+    cursor: pointer;
+  }
+  
+  /* 購入ボタン・お気に入りボタン */
+  .button-area {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .buy-btn {
+    width: 140px;
+    padding: 15px 30px;
+    transition: 0.3s;
+  }
+  
+  .buy-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .favorite-btn {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    font-size: 24px;
+    color: #b8bcc4;
+    transition: 0.3s;
+  }
+  
+  .favorite-btn:hover {
+    transform: translateY(-3px);
+  }
+  
+  .favorite-btn.active {
+    color: #7fa8cc;
+    background: #eef6ff;
+  }
+  
+  /* フッター */
+  .footer {
+    text-align: center;
+    padding: 40px;
+    background: #f5f0e8;
+    color: #8fa9c4;
+    letter-spacing: 3px;
+  }
+  
+  /* スマホ対応 */
+  @media (max-width: 768px) {
+    .header,
+    .hero,
+    .about,
+    .product-area,
+    .product-detail {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    .hero {
+      height: auto;
+      padding: 60px 30px;
+    }
+  
+    .hero-img {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .hero-text h1 {
+      font-size: 28px;
+    }
+  
+    .about,
+    .products {
+      padding: 60px 30px;
+    }
+  
+    .product-list {
+      margin-bottom: 30px;
+    }
+  
+    .button-area {
+      display: flex;
+    }
+  }
