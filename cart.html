@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart | pale table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page">
+    <header class="header">
+      <h1 class="logo">pale table</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+      </nav>
+    </header>
+
+    <main class="cart">
+      <h2>Shopping Cart</h2>
+      <p class="cart-lead">選んだ器を確認できます。</p>
+
+      <div class="cart-layout">
+        <section class="cart-items" id="cartItems"></section>
+
+        <aside class="cart-summary">
+            <h3>Order Summary</h3>
+          
+            <div class="summary-row">
+              <span>商品合計</span>
+              <span id="itemTotal">¥0</span>
+            </div>
+          
+            <div class="summary-row">
+              <span>送料</span>
+              <span>¥500</span>
+            </div>
+          
+            <div class="summary-total">
+              <span>合計</span>
+              <span id="grandTotal">¥0</span>
+            </div>
+          
+            <button class="checkout-btn">購入へ進む</button>
+          </aside>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>pale table</p>
+      <p>© 2026 pale table</p>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
